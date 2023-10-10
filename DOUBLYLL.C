@@ -117,14 +117,14 @@ void insmid()
 	scanf("%d"&pos);
 	if(pos>count)
 	{
-		print("Invalid position");
+		printf("Invalid position");
 	}
 	else
 	{
 		temp=temp1=head;
 		while(i<pos)
 		{
-			tmep1=temp;
+			temp1=temp;
 			temp=temp->next;
 			i++;
 		}
@@ -143,12 +143,12 @@ void insend()
 	printf("Enter the element to be inserted\t:");
 	scanf("%d",&newnode->data);
 	newnode->next=NULL;
-	tmep=head;
+	temp=head;
 	while(temp->next!=NULL)
 	{
-		tmep=temp->next;
+		temp=temp->next;
 	}
-	tmep->next=mewnode;
+	temp->next=newnode;
 	newnode->prev=temp;
 }
 void delbeg()
@@ -207,10 +207,10 @@ void delend()
 	temp=head;
 	while(temp->next!=NULL)
 	{
-		tmep1=tmep;
-		temp=tmep->next;
+		temp1=temp;
+		temp=temp->next;
 	}
-	tmep1->next=NULL;
+	temp1->next=NULL;
 }
 void searching()
 {
