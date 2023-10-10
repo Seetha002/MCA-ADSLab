@@ -42,7 +42,7 @@ void main()
 				display();
 				break;
 			case 6: delmid();
-				dispaly();
+				display();
 				break;
 			case 7: delend();
 				display();
@@ -57,7 +57,8 @@ void main()
 }
 void creation()
 {
-	int ch=1,head=0;
+	int ch=1;
+	head=0;
 	while(ch)
 	{
 		newnode=(struct node*)malloc(sizeof(struct node));
